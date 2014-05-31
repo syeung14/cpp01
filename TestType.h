@@ -15,10 +15,38 @@ public:
     virtual ~TestType();
     
     void testTypeSize(void);
-    
+    void testStruct(void);
 private:
 
 };
+
+namespace HairColor {
+    enum HairColor {Black, Blond, Red,Brown };
+}
+//C way of struct
+struct Person {
+    char fName[25];
+    char lName[25];
+    HairColor::HairColor hisHarStyle;
+    
+};
+void printTest(void);
+
+//C++ way of struct
+//elements are by default public
+struct AsianPerson {
+public:
+protected:
+    int size;    
+private:
+    char fName[25];
+    char lName[25];
+    HairColor::HairColor hisHarStyle;
+};
+
+
+
+
 
 #endif	/* TESTTYPE_H */
 

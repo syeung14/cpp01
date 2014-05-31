@@ -13,8 +13,6 @@
 using namespace std;
 
 class myC { 
-    
-
 public:
     myC():sp(0) {}
     /*myC(void) {  //can't be overloaded!
@@ -109,6 +107,6 @@ void doTestType() {
  * 
  */
 int main(int argc, char** argv) {
-    doClassTest();
+    doTestType();
     return 0;
 }
